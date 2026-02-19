@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechBro - Assistência Técnica</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #0d0d0d;
+            color: white;
+        }
+
+        header {
+            background: linear-gradient(90deg, #000000, #1a0000);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #ff0000;
+        }
+
+        header img {
+            width: 200px;
+        }
+
+        header h1 {
+            color: #ff0000;
+            margin-top: 10px;
+        }
+
+        nav {
+            background-color: #111;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff0000;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: url('https://images.unsplash.com/photo-1587202372775-9897d5a7b3dc') no-repeat center center/cover;
+        }
+
+        .hero h2 {
+            background-color: rgba(0,0,0,0.7);
+            display: inline-block;
+            padding: 15px 25px;
+            border-radius: 10px;
+            color: #ff0000;
+        }
+
+        .services {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background-color: #1a1a1a;
+            padding: 30px;
+            width: 250px;
+            border-radius: 10px;
+            border: 2px solid #ff0000;
+        }
+
+        .card h3 {
+            color: #ff0000;
+            margin-bottom: 15px;
+        }
+
+        .card button {
+            background-color: #ff0000;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .card button:hover {
+            background-color: #cc0000;
+        }
+
+        footer {
+            background-color: #000;
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid #ff0000;
+        }
+
+        footer a {
+            color: #ff0000;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="TechBro Logo.png" alt="Logo TechBro">
+    <h1>TechBro - Soluções em Tecnologia</h1>
+</header>
+
+<nav>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+</nav>
+
+<section class="hero">
+    <h2>Manutenção e Venda de Computadores</h2>
+</section>
+
+<section id="servicos" class="services">
+    <h2>Nossos Serviços</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Manutenção</h3>
+            <p>Conserto de computadores, notebooks e upgrades.</p>
+            <button onclick="window.location.href='https://wa.me/5562983155921'">Solicitar via WhatsApp</button>
+        </div>
+        <div class="card">
+            <h3>Compra de Aparelhos</h3>
+            <p>Venda de PCs, notebooks e peças.</p>
+            <button onclick="window.location.href='mailto:muriloaugustoneivabrito01@gmail.com'">Enviar Email</button>
+        </div>
+        <div class="card">
+            <h3>Limpeza</h3>
+            <p>Limpeza interna e preventiva de equipamentos.</p>
+            <button onclick="window.location.href='https://wa.me/5562983155921'">Solicitar via WhatsApp</button>
+        </div>
+    </div>
+</section>
+
+<section id="contato" class="services">
+    <h2>Contato</h2>
+    <p>Email: <a href="mailto:muriloaugustoneivabrito01@gmail.com">muriloaugustoneivabrito01@gmail.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/5562983155921">(62) 98315-5921</a></p>
+</section>
+
+<footer>
+    <p>© 2026 TechBro - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
